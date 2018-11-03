@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+  <item ip="127.0.0.1" port="6379" passwd="" redis_db_index="0" dbtype="1" desc="role" />
+</root>

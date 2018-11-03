@@ -1,0 +1,15 @@
+cmake_minimum_required (VERSION 2.8)
+set(TARGE_NAME "GateSrv")
+project(${TARGE_NAME})
+
+aux_source_directory("." TARGET_SRC)
+if(WIN32)
+    file(GLOB HEAD *.h)
+    add_executable(${TARGE_NAME} ${TARGET_SRC} ${HEAD})
+else(WIN32)
+	SET_CCACHE_COMPLER()
+    add_executable(${TARGE_NAME} ${TARGET_SRC})
+endif(WIN32)
+add_dependencies(${TARGE_NAME} ${TOTALLIB})
+
+target_link_libraries(${TARGE_NAME} ${TOTALLIB} ${TOTALEXLIB})

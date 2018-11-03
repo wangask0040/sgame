@@ -1,0 +1,26 @@
+syntax = "proto3";
+package protocol;
+
+enum MSG_CMD
+{
+	msgcmd_logic_start 		= 0;
+	msgcmd_logic_login 		= 1;
+	msgcmd_logic_end   		= 1000;
+	
+	msgcmd_game_start		= 1001;
+	msgcmd_game_login		= 1002;
+	msgcmd_game_end			= 2000;
+	
+	msgcmd_gate_start		= 2001;
+	msgcmd_gate_end			= 3000;
+	
+	msgcmd_gm_start			= 3001;
+	msgcmd_gm_reload		= 3002;
+	msgcmd_gm_end			= 4000;
+}
+
+enum MSG_RESULT_ID
+{
+	msgresult_start 		= 0;
+	msgresult_parse_err		= 1;
+}

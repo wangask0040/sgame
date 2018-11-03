@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root type="tcp">
+  <item>
+    <srv_group name="GateSrv" srvtype="1" ip="127.0.0.1">
+      <item send="7000" recv="7001"></item>
+    </srv_group>
+    <srv_group name="GameSrv" srvtype="2" ip="127.0.0.1">
+      <item send="7004" recv="7005"></item>
+    </srv_group>
+    <srv_group name="GmSrv" srvtype="3" ip="127.0.0.1">
+      <item send="7006" recv="7007"></item>
+    </srv_group>
+  </item>
+</root>

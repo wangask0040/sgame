@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <log level="0" />
+  <server>
+    <item name="LogicSrv" idx="0" ip="0.0.0.0" port="5001" />
+    <item name="GateSrv" idx="0" ip="0.0.0.0" port="5002" />
+    <item name="GameSrv" idx="0" />
+    <item name="RouterSrv" idx="0" />
+    <item name="GmSrv" idx="0" ip="0.0.0.0" port="5003" />
+  </server>
+  <config_root_dir>/home/dev1/src/test</config_root_dir>
+</root>

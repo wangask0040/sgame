@@ -1,0 +1,14 @@
+syntax = "proto3";
+package protocol;
+
+message msg_head
+{
+	int32 			cmd 	= 1;
+	int32			result	= 2;
+}
+
+message msg_info
+{
+	msg_head 		head = 1;
+	bytes 			body = 2;
+}

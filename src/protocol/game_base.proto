@@ -1,0 +1,17 @@
+syntax = "proto3";
+package protocol;
+
+enum AWARD_TYPE
+{
+	awardtype_start = 0;
+}
+
+
+message award_unit
+{
+	uint32 type 	= 1;
+	uint32 gid 		= 2;
+	uint32 val 		= 3;
+	uint32 min_val 	= 4;
+	uint32 max_val 	= 5;
+}
